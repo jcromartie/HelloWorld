@@ -1,18 +1,20 @@
-# The Real Ultimate Flixel + MXMLC Tutorial
+# The Real Ultimate Flixel + mxmlc Tutorial
 
 (I was trying to get a simple "Hello World" up and running using
 Flixel and the Flash SDK without an IDE. Although there were several
 tutorials floating around, they all left out important steps or
 otherwise alluded to magic. So, here it is, without further ado:)
 
-## Project Directory
+## Project Structure
 
-Firstly, you should have a dedicated directory for your game.
+Firstly, you should have a dedicated directory for your game. This is
+good practice for any programming project, but you probably already
+knew this :).
 
 ### The "src" Directory
 
-Within this directory, it's customary to have a `src` directory for
-ActionScript source code.
+Within this directory, standard convention is to have a `src`
+directory for ActionScript source code.
 
 Next, copy the `org` directory from the Flixel framework into your
 `src` directory. AS3 loads packages (like `org.flixel.*`) based on
@@ -23,6 +25,11 @@ Then, you should add the following files for our simple tutorial:
 
 * [src/HelloWorld.as](HelloWorld/blob/master/src/HelloWorld.as)
 * [src/PlayState.as](HelloWorld/blob/master/src/PlayState.as)
+
+Read the comments and source code in those files carefully if you
+don't have an understanding of ActionScript yet. They are geared
+towards programmers familiar with Java or C#, or similar typed OO
+languages.
 
 ### HTML Wrapper File
 
