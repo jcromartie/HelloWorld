@@ -45,11 +45,11 @@ embedder like SWFObject.
 Your directory structure should now look like this:
 
 * your-game-source-dir/
-  * org/... (flixel library)
-  * src/
-    * HelloWorld.as
-    * PlayState.as
-  * HelloWorld.html
+ * org/... (flixel library)
+ * src/
+  * HelloWorld.as
+  * PlayState.as
+ * HelloWorld.html
   
 ## Compiling The SWF File
 
