@@ -1,13 +1,27 @@
+// This file is commented in a line-by-line style, for total n00bs.
+
 package
 {
-	import org.flixel.*; //Allows you to refer to flixel objects in your code
-	[SWF(width="640", height="480", backgroundColor="#000000")] //Set the size and color of the Flash file
+    // Import the flixel library, so that we can use Flixel objects!
+    import org.flixel.*;
 
-	public class HelloWorld extends FlxGame
+    // Declare a single public class for our package. This will be the
+    // entry point for our program. We extend FlxGame to gain all of
+    // utility that the FlxGame class provides, which includes setting
+    // up the whole Flixel environment and loading resources, etc.
+    public class HelloWorld extends FlxGame
+    {
+	// This is the constructor of our class. It is called when
+	// HelloWorld.swf is loaded and Flash displays our movie.
+	public function HelloWorld()
 	{
-		public function HelloWorld()
-		{
-			super(640,480,PlayState); //Create a new FlxGame object and load "PlayState"
-		}
+	    // Call the superclass (FlxGame) constructor to initialize
+	    // the display. The parameters here mean that the drawing
+	    // area (not the movie size) is going to be 320 pixels
+	    // high by 240 pixels wide, with the PlayState class as
+	    // the initial game state, and a 2X scaling factor, so it
+	    // will look nice and chunky.
+	    super(320, 240, PlayState, 2);
 	}
+    }
 }
