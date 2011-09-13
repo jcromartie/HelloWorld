@@ -7,12 +7,12 @@ otherwise alluded to magic.
 
 So, here it is, without further ado:
 
-First, you should have a directory for your game source files. Copy
-the `org` directory from the Flixel framework into your source
-directory. AS3 loads packages (like `org.flixel.*`) based on directory
-name relative to the source file, so this directory scheme logically
-follows. Then, you should add the following files for our simple
-tutorial:
+Firstly, you should have a dedicated directory for your game source
+and other resource files. Copy the `org` directory from the Flixel
+framework into your source directory. AS3 loads packages (like
+`org.flixel.*`) based on directory name relative to the source file,
+so this directory scheme logically follows. Then, you should add the
+following files for our simple tutorial:
 
 * [HelloWorld.as](blob/master/src/HelloWorld.as)
 * [PlayState.as](blob/master/src/PlayState.as)
@@ -26,8 +26,8 @@ embedder like SWFObject.
 
 Your directory structure should now look like this:
 
-* some-dir/
-  * org/...
+* your-game-source-dir/
+  * org/... (flixel library)
   * HelloWorld.as
   * PlayState.as
   * HelloWorld.html
@@ -38,9 +38,15 @@ the scope of this tutorial.
 `cd` into your game's source directory. Now, run:
 
     mxmlc -static-link-runtime-shared-libraries=true HelloWorld.as
+    
+The `-static-link-runtime-shared-libraries=true` flag tells the
+compiler to bundle the code necessary to run Flixel into your SWF, so
+that it's completely self-contained.
 
 If the compiler exits without any warnings or errors, you should be
 good to go, with a shiny new .swf file in the current directory.
 
 Just load HelloWorld.html in your favorite browser, and you should see
-a little message from Flixel.
+a little message from Flixel!
+
+Enjoy!
