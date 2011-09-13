@@ -45,7 +45,7 @@ embedder like SWFObject.
 Your directory structure should now look like this:
 
 * game-dir/
-* game-dir/org/... (flixel library)
+* game-dir/src/org/... (flixel library)
 * game-dir/src/
 * game-dir/src/HelloWorld.as
 * game-dir/src/PlayState.as
