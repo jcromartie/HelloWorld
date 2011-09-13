@@ -15,7 +15,7 @@ Within this directory, it's customary to have a `src` directory for
 ActionScript source code.
 
 Next, copy the `org` directory from the Flixel framework into your
-source directory. AS3 loads packages (like `org.flixel.*`) based on
+`src` directory. AS3 loads packages (like `org.flixel.*`) based on
 directory name relative to the source file, so this directory scheme
 logically follows.
 
@@ -49,16 +49,17 @@ Your directory structure should now look like this:
 (This step assumes that you have mxmlc on your `PATH`. This is beyond
 the scope of this tutorial.)
 
-`cd` into your game's source directory. Now, run:
+Flixel games compile into single SWF files. To do this, just `cd` into
+your project directory, and run:
 
-    mxmlc -static-link-runtime-shared-libraries=true HelloWorld.as
+    mxmlc -static-link-runtime-shared-libraries=true src/HelloWorld.as
     
 The `-static-link-runtime-shared-libraries=true` flag tells the
 compiler to bundle the code necessary to run Flixel into your SWF, so
 that it's completely self-contained.
 
 If the compiler exits without any warnings or errors, you should be
-good to go, with a shiny new .swf file in the current directory.
+good to go, with a shiny new .swf file sitting at `src/HelloWorld.swf`.
 
 ## Play It!
 
