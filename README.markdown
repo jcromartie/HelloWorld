@@ -14,15 +14,15 @@ framework into your source directory. AS3 loads packages (like
 so this directory scheme logically follows. Then, you should add the
 following files for our simple tutorial:
 
-* [HelloWorld.as](blob/master/src/HelloWorld.as)
-* [PlayState.as](blob/master/src/PlayState.as)
+* [HelloWorld.as](HelloWorld/blob/master/src/HelloWorld.as)
+* [PlayState.as](HelloWorld/blob/master/src/PlayState.as)
 
 You'll also want an *HTML wrapper* to display the generated SWF file
 in a browser. For a full-fledged webpage, you'll want a little more
 embellishment than this, or you'll want to use a dedicated flash
 embedder like SWFObject.
 
-* [HelloWorld.html](blob/master/HelloWorld.html)
+* [HelloWorld.html](HelloWorld/blob/master/HelloWorld.html)
 
 Your directory structure should now look like this:
 
